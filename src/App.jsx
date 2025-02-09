@@ -1,16 +1,16 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Welcome from './components/Welcome';
-import About from './components/About';
-import UserList from './components/UserList';
+import About from './pages/About';
+import UserList from './pages/UserList';
 import Navbar from './components/Navbar';
+import Todolist from './pages/Todolist';
 
 const App = () => {
     return (
         <Router>
             <Navbar/>
             <Routes>
-                <Route path='/' element={<Welcome name={'Alamgir'} email={'alamgir@istt.edu.bd'} />} />
+                <Route path='/' element={<Todolist/>} />
                 <Route path='/user-list' element={<UserList/>} />
                 <Route path='/about' element={<About/>} />
             </Routes>

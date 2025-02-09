@@ -1,7 +1,8 @@
 import React from 'react';
-import User from './User';
+import User from '../components/User';
 
 const UserList = () => {
+    
     let users = [
         { UserName: 'Alamgir', designation: 'Software Engineer.', color: 'red' },
         { UserName: 'Aminul', designation: 'Lecturer', color: 'blue' },
